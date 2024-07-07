@@ -6,7 +6,7 @@ DeepTeach is an online examination portal designed for students and teachers. Th
 
 Before you begin, ensure you have the following installed on your machine:
 
-- Node.js (v14 or higher)
+- Node.js (v14 or higher) [https://nextjs.org/docs]
 - npm (v6 or higher)
 - MongoDB
 
@@ -60,11 +60,17 @@ JWT_SECRET= # Generate and add JWT secret
 
 ## Running the Project
 
+### Make sure your database name is configured properly in the files, the default is "DeepTeach". Or else, change every instance of "DeepTeach" to your database name. 
+
+Configure the array in `app/componets/TestCreation.js`, to include any additional collections of questions you want to add. Make sure that the names match with the array elements. 
+
 After completing the setup, start the development server using the following command:
 
 ```bash
 npm run dev
 ```
+
+For a production grade server, run:
 
 ```bash
 npm run build
