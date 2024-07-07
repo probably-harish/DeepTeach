@@ -19,7 +19,7 @@ Follow these steps to get the project up and running:
 Clone the repository to your local machine using the following command:
 
 ```bash
-git clone <https://github.com/probably-harish/DeepTeach.git>
+git clone https://github.com/probably-harish/DeepTeach.git
 ```
 
 ### 2. Install Dependencies
@@ -52,7 +52,7 @@ Create a `.env.local` file in the root directory of the project and add the foll
 
 ```bash
 MONGODB_URI=mongodb://localhost:27017/DeepTeach or something like that
-JWT_SECRET=
+JWT_SECRET= # Generate and add JWT secret
 ```
 
 - `MONGODB_URI`: This is the connection string for your MongoDB instance. Make sure MongoDB is running locally or adjust the connection string as needed for your setup.
